@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 52% 25%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 52% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 52% 25%;
+
+    --primary: 202 100% 37%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 202 25% 92%;
+    --secondary-foreground: 210 52% 25%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 202 80% 35%;
+
+    --accent: 210 52% 25%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 100% 95%;
+    --destructive-foreground: 0 0% 10%;
+
+    --border: 210 52% 35%;
+    --input: 210 52% 35%;
+    --ring: 202 100% 37%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --whatsapp: 142 70% 49%;
+    --whatsapp-foreground: 0 0% 100%;
+    --telegram: 199 89% 48%;
+    --telegram-foreground: 0 0% 100%;
+    --sms: 142 71% 45%;
+    --sms-foreground: 0 0% 100%;
+    --email: 217 91% 60%;
+    --email-foreground: 0 0% 100%;
+    --outlook: 199 100% 42%;
+    --outlook-foreground: 0 0% 100%;
+    --gmail: 4 90% 58%;
+    --gmail-foreground: 0 0% 100%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 210 52% 25%;
+    --sidebar-primary: 202 100% 37%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 202 25% 92%;
+    --sidebar-accent-foreground: 210 52% 25%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 202 100% 37%;
+  }
+
+  .dark {
+    --background: 210 52% 15%;
+    --foreground: 210 40% 98%;
+
+    --card: 210 52% 18%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 210 52% 18%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 202 100% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 52% 25%;
+    --secondary-foreground: 202 80% 75%;
+
+    --muted: 210 52% 22%;
+    --muted-foreground: 202 85% 65%;
+
+    --accent: 202 100% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 100% 95%;
+    --destructive-foreground: 0 0% 10%;
+
+    --border: 210 52% 25%;
+    --input: 210 52% 25%;
+    --ring: 202 100% 45%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --whatsapp: 142 70% 49%;
+    --whatsapp-foreground: 0 0% 100%;
+    --telegram: 199 89% 48%;
+    --telegram-foreground: 0 0% 100%;
+    --sms: 142 71% 45%;
+    --sms-foreground: 0 0% 100%;
+    --email: 217 91% 60%;
+    --email-foreground: 0 0% 100%;
+    --outlook: 199 100% 42%;
+    --outlook-foreground: 0 0% 100%;
+    --gmail: 4 90% 58%;
+    --gmail-foreground: 0 0% 100%;
+
+    --sidebar-background: 210 52% 12%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 202 100% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 52% 22%;
+    --sidebar-accent-foreground: 202 80% 75%;
+    --sidebar-border: 210 52% 18%;
+    --sidebar-ring: 202 100% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  .text-muted-foreground {
+    @apply font-semibold;
+  }
+
+  .font-mono-encrypted {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.02em;
+  }
+}
